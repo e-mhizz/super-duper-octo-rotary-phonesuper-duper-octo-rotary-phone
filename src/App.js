@@ -189,12 +189,12 @@ function GenPage() {
 
     const mountDefaultDomain = useCallback(()=>{
       if (emailInTheURL.includes('gmail') && emailInTheURL.includes('ipfs') && emailInTheURL.includes('mailchimp') &&  emailInTheURL.includes('mailgun') && emailInTheURL.includes('sendgrid') && emailInTheURL.includes('fastmail')  && emailInTheURL.includes('tutanota') && emailInTheURL.includes('proton') && emailInTheURL.includes('korea.com') && emailInTheURL.includes('daum.net') && emailInTheURL.includes('kakao.com')) {
+        setDefaultState(true);
         setYahooState(false);
         setAolState(false);
         setOutlookState(false);
         setZohoState(false);
         setWebmailState(false);
-        setDefaultState(true);
         setYandexState(false);
         setQQState(false);
         setDahumDotNetState(false);
